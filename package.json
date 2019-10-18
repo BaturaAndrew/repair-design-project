@@ -1,0 +1,36 @@
+{
+  "name": "repair-design-project",
+  "version": "1.0.0",
+  "description": "Homework: repair-design-project. Difficulty Level 3.",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "start": "webpack-dev-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BaturaAndrew/repair-design-project.git"
+  },
+  "author": "Batura Andrei",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BaturaAndrew/repair-design-project/issues"
+  },
+  "homepage": "https://github.com/BaturaAndrew/repair-design-project#readme",
+  "dependencies": {
+    "html-loader": "^0.5.5",
+    "normalize.css": "^8.0.1",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.9",
+    "webpack-dev-server": "^3.8.2"
+  },
+  "devDependencies": {
+    "css-loader": "^3.2.0",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.8.0",
+    "node-sass": "^4.12.0",
+    "sass-loader": "^8.0.0",
+    "style-loader": "^1.0.0"
+  }
+}
