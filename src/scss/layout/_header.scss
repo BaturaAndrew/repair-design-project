@@ -1,0 +1,66 @@
+header {
+  height: 83px;
+  width: 100%;
+  background: $body-bg-color;
+  font-size: 14px;
+
+
+  .header-container {
+    width: 87%;
+    margin: 0 auto;
+    height: 100%;
+    display: grid;
+    grid-template: auto/190fr 85fr 582fr 67fr 126fr 45fr 161fr;
+    align-items: center;
+
+
+    h1 {
+      color: $golden;
+      font-family: $demi;
+      font-size: 1em;
+      text-transform: uppercase;
+    }
+
+    nav {
+      grid-column: 3;
+      display: inline-flex;
+
+      a {
+        color: white;
+        font-family: $book;
+        font-size: 1em;
+        font-weight: 100;
+        text-transform: uppercase;
+        padding-right: 8%;
+        text-decoration: none;
+        transition: color .1s ease-in-out;
+
+        &:last-child {
+          padding: 0;
+        }
+
+        &:hover {
+          color: $golden;
+        }
+      }
+
+      .active {
+        color: $golden;
+      }
+    }
+
+    a {
+      color: $golden;
+      grid-column: 5;
+      font-family: $demi;
+    }
+
+    button {
+      width: 161px;
+      height: 37px;
+      grid-column: 7;
+      font-style: italic;
+      font-size: .9em;
+    }
+  }
+}
