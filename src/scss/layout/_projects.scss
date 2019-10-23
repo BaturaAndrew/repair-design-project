@@ -1,0 +1,118 @@
+.projects {
+  width: 100%;
+  height: 600px;
+  display: grid;
+  grid-template: 8fr 22fr/60fr 80fr 10fr;
+  background: $body-bg-color;
+
+
+  .projects-completed {
+    width: 442px;
+    height: 390px;
+    margin-top: 50px;
+    margin-left: 50px;
+    grid-column: 1;
+    grid-row: 2;
+    display: grid;
+    grid-template: 8fr 10fr 10fr 10fr 10fr 10fr/auto;
+
+    &__header {
+      margin: 0;
+      font-family: $ysv;
+      font-size: 27px;
+      letter-spacing: -0.07em;
+      text-transform: uppercase;
+      color: $golden;
+    }
+
+    &__text {
+      margin: 0;
+      grid-row: 3;
+      font-family: $book;
+      font-size: 18px;
+      color: #FFFFFF;
+    }
+
+    .projects-completed__info {
+      grid-row: 5;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: flex-start;
+
+      .info__section {
+        width: 160px;
+        height: 80px;
+
+        &__header {
+          font-family: $ysv;
+          color: $golden;
+          font-size: 18px;
+          text-transform: uppercase;
+        }
+
+        &__text {
+          font-family: $book;
+          font-size: 15px;
+          color: #FFFFFF;
+        }
+      }
+    }
+  }
+
+  .projects-navigation {
+    grid-column: 2;
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+
+    &__link {
+      font-family: $ysv;
+      font-size: 14px;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.3);
+
+
+      &:hover {
+        color: $golden;
+        text-decoration: underline;
+      }
+
+      &--active {
+        color: $golden;
+        text-decoration: underline;
+      }
+
+    }
+  }
+
+  .projects-conteiner-slaider {
+    grid-column: 2 / span 2;
+    grid-row: 2 / span 2;
+    flex-direction: row;
+    justify-content: end;
+    align-items: flex-end;
+    overflow: hidden;
+
+  }
+
+  .slider__img {
+    width: 80%;
+    height: 80%;
+    margin-right: 10px;
+  }
+
+  .cosmos-space1,
+  .cosmos-space2 {
+    background: white;
+    grid-column: 3;
+  }
+
+  .cosmos-space1 {
+    grid-row: 1;
+  }
+
+  .cosmos-space2 {
+    grid-row: 3;
+  }
+}

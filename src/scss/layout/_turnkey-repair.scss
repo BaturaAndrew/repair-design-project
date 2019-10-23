@@ -1,0 +1,101 @@
+.turnkey-repair {
+  width: 100%;
+  height: 707px;
+  display: grid;
+  grid-template: auto/82px auto;
+  align-items: center;
+  background: #C4C4C4;
+  position: relative;
+  overflow: hidden;
+
+  .instagram {
+    width: 100%;
+    height: 100%;
+
+    background: $body-bg-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    a {
+      font-size: 0.9em;
+      color: $golden;
+      font-family: $demi;
+      writing-mode: tb-rl;
+      text-align: center;
+      text-transform: uppercase;
+    }
+  }
+
+  .backgroung-img {
+    position: absolute;
+    width: 1358px;
+    height: 707px;
+    left: 307px;
+    top: 101px;
+  }
+
+  .order {
+    padding-left: 60px;
+    z-index: 100;
+
+    h2 {
+      font-family: $ysv;
+      font-size: 40px;
+      line-height: 53px;
+      text-transform: uppercase;
+      color: #FFFFFF;
+
+      span {
+        color: $golden;
+      }
+    }
+
+    h4 {
+      font-family: $book;
+      font-size: 22px;
+      line-height: 30px;
+
+      color: #FFFFFF;
+    }
+
+    &__buttons {
+      width: 507px;
+      display: inline-flex;
+
+      a {
+        height: 51px;
+        width: 207px;
+        line-height: 51px;
+      }
+    }
+
+  }
+}
+
+.scrolldown {
+  width: 247px;
+  height: 97px;
+  background: $body-bg-color;
+
+  position: absolute;
+  top: 740px;
+
+  &__link {
+    color: #FFFFFF;
+    font-family: $ysv;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: uppercase;
+
+    &::after {
+      content: url('../assets/images/scroll-down.svg');
+      position: relative;
+      right: -20px;
+      top: 10px;
+    }
+  }
+
+}

@@ -1,27 +1,34 @@
 @font-face {
   font-family: "Futura Demi C";
-  src: url("/src/assets/fonts/futurademic.otf") format("otf");
+  src: url("../assets/fonts/futurademic.otf") format('oft');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Futura Book C";
-  src: url("/src/assets/fonts/futurabookc.otf") format("otf");
+  src: url("../assets/fonts/futurabookc.otf") format('oft');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Futura Demic Italic";
-  src: url("/src/assets/fonts/futurademic-italic.otf") format("otf");
+  src: url("../assets/fonts/futurademic-italic.otf") format('oft');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Futura Medium C";
-  src: url("/src/assets/fonts/futuramediumc.otf") format("otf");
+  src: url("../assets/fonts/futuramediumc.otf") format("otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Yeseva One";
+  src: url("../assets/fonts/YesevaOne-Regular.ttf") format("ttf");
   font-weight: normal;
   font-style: normal;
 }
