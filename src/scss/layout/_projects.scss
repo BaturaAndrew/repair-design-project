@@ -2,18 +2,18 @@
   width: 100%;
   height: 600px;
   display: grid;
-  grid-template: 8fr 10fr 390px/60fr 80fr 10fr;
+  grid-template: 8fr 10fr 420px/60fr 80fr 10fr;
   background: $body-bg-color;
 
 
   .projects-completed {
     width: 442px;
-    height: 390px;
+    height: 420px;
     margin-left: 50px;
     grid-column: 1;
     grid-row: 3;
     display: grid;
-    grid-template: 8fr 10fr 10fr 10fr 10fr 10fr/auto;
+    grid-template: 8fr 10fr 10fr 10fr 20fr 10fr/auto;
 
     &__header {
       margin: 0;
@@ -47,6 +47,7 @@
           color: $golden;
           font-size: 18px;
           text-transform: uppercase;
+          margin: 0;
         }
 
         &__text {
@@ -55,6 +56,41 @@
           color: #FFFFFF;
         }
       }
+
+    }
+
+
+    .info-controls {
+      grid-row: 6;
+      justify-content: start;
+      align-items: center;
+      flex-direction: row;
+
+      &__img1 {
+        margin-right: 30px;
+      }
+
+      &__cycle {
+        display: inline-block;
+        margin-right: 25px;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.3);
+      }
+
+      &__cycle:nth-child(2){
+        background: #FFFFFF;
+      }
+      &__cycle:nth-child(4){
+        margin-right: 0; 
+      }
+
+      &__img2 {
+        margin-left: 30px;
+        transform: rotate(180deg);
+      }
+
     }
   }
 

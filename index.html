@@ -56,7 +56,7 @@
 
     </section>
 
-    <div class="scrolldown flex">
+    <div class="scrolldown flex-column">
       <a href="#" class="scrolldown__link">
         Scroll down
       </a>
@@ -79,7 +79,7 @@
           presented on the site. For 14 years on in the construction <br>
           market we have made happy more than 1000 families
         </p>
-        <div class="projects-completed__info flex">
+        <div class="projects-completed__info flex-row">
           <div class="info-section">
             <h3 class="info-section__header">
               City:
@@ -113,14 +113,20 @@
               Upon request
             </p>
           </div>
-          <div class="info-controls">
 
-          </div>
+
         </div>
 
+        <div class="info-controls flex-row">
+          <img class="info-controls__img1" src="src/assets/images/page-arrow.svg" alt="pic-arrow">
+          <div class="info-controls__cycle"></div>
+          <div class="info-controls__cycle"></div>
+          <div class="info-controls__cycle"></div>
+          <img class="info-controls__img2" src="src/assets/images/page-arrow.svg" alt="pic-arrow">
+        </div>
       </div>
 
-      <div class="projects-conteiner-slaider flex">
+      <div class="projects-conteiner-slaider flex-row">
         <img class="slider__img" src="src/assets/images/pic-1.png" alt="pic-1">
         <img class="slider__img" src="src/assets/images/pic-2.png" alt="pic-2">
       </div>
@@ -131,12 +137,36 @@
 
 
     <!-- ONLINE CONTROL -->
-    <section class="online-control flex">
+    <section class="online-control">
+      <div class="online-control_block flex-column">
+        <h3 class="online-control__header"> online control </h3>
+        <img src="./src/assets/images/online-control.svg" alt="online-control">
+        <div class="online-control__video">
+          <iframe width="817" height="434" src="https://www.youtube.com/embed/jmaMeTEUCZg" frameborder="0"
+            allow="autoplay; encrypted-media" allowfullscreen>
+          </iframe>
+        </div>
+        <p class="online-control__text">
+          At each facility, a camera is installed that broadcasts the progress of work on the clock.<br>
+          At any time, you can go to our website and monitor the progress of work in your<br>
+          apartment. You can watch the live broadcast from one of our facilities!<br>
+          Leave a request below and you will receive a link to the broadcast.
+        </p>
 
-      <h3 class="online-control__header">
-        online control
-      </h3>
-      <img src="./src/assets/images/online-control.svg" alt="online-control">
+        <form class="online-control__form">
+          <label class="online-control__name-lable">Name</label>
+          <input class="online-control__name-input" type="text" placeholder="What is your name:">
+          <label class="online-control__phone-lable">Phone</label>
+          <input class="online-control__phone-input" type="text" placeholder="Your phone number:">
+          <input class="online-control__button" type="submit" value="Submit">
+          <label class="online-control__check flex-row">
+            <input class="online-control__checkbox" type="checkbox">
+            <span class="online-control__checkmark"></span>
+            I agree to the processing of personal data
+          </label>
+        </form>
+
+      </div>
 
     </section>
 
@@ -186,7 +216,20 @@
     </section>
 
     <footer class="footer">
+      <div class="footer-container">
+        <h1>IC "Repair Design Project</h1>
+        <nav class="navigation">
+          <a class="navigation__link navigation__link--active" href="#">HOME</a>
+          <a class="navigation__link" href="#">PROJECTS</a>
+          <a class="navigation__link" href="#">MEASUREMENT</a>
+          <a class="navigation__link" href="#">TEAM</a>
+          <a class="navigation__link" href="#">REVIEWS</a>
+          <a class="navigation__link" href="#">CONTACTS</a>
 
+        </nav>
+        <a href="" class="phone-link">+7 (928) 768-32-39</a>
+        <a href="" class="button-type1 request">Request a call</a>
+      </div>
     </footer>
   </div>
 </body>
