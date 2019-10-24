@@ -29,8 +29,8 @@
 
   .backgroung-img {
     position: absolute;
-    width: 1358px;
-    height: 707px;
+    // width: 1358px; 
+    width: 90%;
     left: 307px;
     top: 101px;
   }
@@ -84,8 +84,6 @@
   &__link {
     color: #FFFFFF;
     font-family: $ysv;
-    font-style: normal;
-    font-weight: normal;
     font-size: 14px;
     line-height: 19px;
     text-transform: uppercase;
