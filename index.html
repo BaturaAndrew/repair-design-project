@@ -117,11 +117,11 @@
         </div>
 
         <div class="info-controls flex-row">
-          <img class="info-controls__img1" src="src/assets/images/page-arrow.svg" alt="pic-arrow">
-          <div class="info-controls__cycle"></div>
-          <div class="info-controls__cycle"></div>
-          <div class="info-controls__cycle"></div>
-          <img class="info-controls__img2" src="src/assets/images/page-arrow.svg" alt="pic-arrow">
+          <a class="info-controls__img1" href=""> </a>
+          <button class="info-controls__slide"></button>
+          <button class="info-controls__slide"></button>
+          <button class="info-controls__slide"></button>
+          <a href="" class="info-controls__img2"></a>
         </div>
       </div>
 
@@ -231,8 +231,36 @@
     </section>
 
     <!-- MEASUREMENT -->
-    <section class="mesuarement">
-
+    <section class="mesuarement  flex-row">
+      <div class="mesuarement-services">
+        <ul>
+          <li>Our specialist will arrive for measurements per day <br>
+            contact, or appoint a date convenient for you</li>
+          <li>Free metering</li>
+          <li>Free consultation</li>
+          <li>Get a cost estimate and <br>
+            the timing of your future repairs</li>
+        </ul>
+      </div>
+      <div class="mesuarement-form flex-column">
+        <h2 class="form__header">
+          Leave a request for free <br> departure of the measurer
+        </h2>
+        <div class="form__block flex-column">
+          <label class="form__name-lable">Name</label>
+          <input class="form__name-input" type="text" placeholder="What is your name:">
+          <label class="form__phone-lable">Phone</label>
+          <input class="form__phone-input" type="text" placeholder="Your phone number:">
+          <label class="form__email-lable">Email</label>
+          <input class="form__email-input" type="text" placeholder="Your email:">
+          <label class="form__check flex-row">
+            <input class="form__checkbox" type="checkbox">
+            <span class="form__checkmark"></span>
+            I agree to the processing of personal data
+          </label>
+        </div>
+        <input class="form__button button-type2 btn-margin" type="submit" value="Submit">
+      </div>
     </section>
 
     <!-- STYLES -->

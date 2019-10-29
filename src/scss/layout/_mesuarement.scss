@@ -1,0 +1,82 @@
+.mesuarement {
+  justify-content: space-between;
+
+  .mesuarement-services {
+    background: no-repeat center url("../assets/images/steps-building.png");
+
+    // delete
+    width: 700px;
+    height: 600px;
+ 
+    ul{
+      margin-left: 400px;
+    }
+  }
+
+  .mesuarement-form {
+
+    width: 506px;
+    height: 509px;
+    background: $body-bg-color;
+    box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.05);
+    justify-content: space-between;
+
+    .form__header {
+      font-family: $demi;
+      font-size: 20px;
+      line-height: 25px;
+      text-align: center;
+      color: #FFFFFF;
+      margin-top: 30px;
+    }
+
+    .form__block {
+      width: 410px;
+      height: 235px;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    .form__name-input,
+    .form__phone-input,
+    .form__email-input {
+      width: 413px;
+    }
+
+    .btn-margin {
+      margin-right: -200px;
+      margin-bottom: 30px;
+    }
+
+    input:not(:last-child) {
+      background: $body-bg-color;
+      color: white;
+    }
+
+    ::-webkit-input-placeholder {
+      color: white;
+    }
+
+    ::-moz-placeholder {
+      color: white;
+    }
+
+    /* Firefox 19+ */
+    :-moz-placeholder {
+      color: white;
+    }
+
+    /* Firefox 18- */
+    :-ms-input-placeholder {
+      color: white;
+    }
+
+
+
+
+    label {
+      color: rgba(255, 255, 255, 0.5);
+    }
+
+  }
+}

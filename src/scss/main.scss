@@ -6,15 +6,20 @@
 
 
 @import "components/buttons";
+@import "components/form";
 
 @import "layout/header";
 @import "layout/turnkey-repair";
 @import "layout/projects";
 @import "layout/online-control";
 @import "layout/types-repair.scss";
+@import "layout/mesuarement.scss";
 
 @import "layout/footer";
 
+*{
+  margin: 0;
+}
 a {
   text-decoration: none;
 }
