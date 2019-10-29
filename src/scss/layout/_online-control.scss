@@ -1,22 +1,33 @@
 .online-control {
   width: 100%;
-  height: 1200px;
   position: relative;
+  background: white;
+  justify-content: flex-start;
 
-  &_block {
-    padding-top: 80px;
+  &__block1 {
     background: $body-bg-color;
-    justify-content: flex-start;
     width: 100%;
     height: 350px;
+    justify-content: flex-start;
+    padding-top: 50px;
   }
 
+  &__block2 {
+    width: 100%;
+    padding-top: 200px;
+    justify-content: flex-start;
+  }
 
   &__header {
     margin: 0;
+    margin-bottom: 30px;
     color: #FFFFFF;
     font-size: 20px;
     text-transform: uppercase;
+  }
+
+  &__video {
+    margin-top: 30px;
   }
 
   &__text {
@@ -39,62 +50,52 @@
 
   &__form {
     display: grid;
-    grid-template: 1fr 2fr 3fr/ 4fr 1fr 4fr 1fr 3fr;
+    grid-template: 2fr 3fr 6fr/ 4fr 1fr 4fr 1fr 3fr;
   }
 
-  &__name-lable,
-  &__phone-lable {
+  .form__name-lable,
+  .form__phone-lable {
     font-family: $book;
     font-size: 15px;
     line-height: 20px;
     color: rgba(54, 54, 54, 0.5);
   }
 
-  &__name-input,
-  &__phone-input {
+  .form__name-input,
+  .form__phone-input {
     font-family: $book;
     font-size: 18px;
     line-height: 24px;
     color: #363636;
   }
 
-  &__name-lable {
+  .form__name-lable {
     grid-column: 1;
   }
 
-  &__name-input {
+  .form__name-input {
     grid-column: 1;
     grid-row: 2;
   }
 
-  &__phone-lable {
+  .form__phone-lable {
     grid-column: 3;
   }
 
-  &__phone-input {
+  .form__phone-input {
     grid-column: 3;
     grid-row: 2;
   }
 
-  &__button {
+  .form__button {
     width: 200px;
     height: 51px;
     grid-column: 5;
     grid-row: 1/span 2;
-    background: #E3B873;
-    box-shadow: 0px 15px 15px rgba(227, 184, 115, 0.15);
-    border-radius: 2px;
-    font-family: $demi;
-    font-size: 15px;
-    line-height: 26px;
-    text-align: center;
-    text-transform: uppercase;
-    color: #FFFFFF;
     align-self: center;
-    border: none;
   }
 
-  &__check {
+  .form__check {
     grid-column: 1/span 5;
     grid-row: 3;
     font-family: $book;
@@ -103,11 +104,11 @@
     color: #181818;
   }
 
-  &__checkbox {
+  .form__checkbox {
     margin-right: 10px;
     width: 18px;
     height: 18px;
     border-radius: 1px;
     background: $golden;
-  } 
+  }
 }
