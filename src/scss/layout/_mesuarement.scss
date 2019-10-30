@@ -1,16 +1,92 @@
 .mesuarement {
   justify-content: space-between;
+  padding-bottom: 150px;
 
   .mesuarement-services {
-    background: no-repeat center url("../assets/images/steps-building.png");
+    background: no-repeat -250px url("../assets/images/steps-building.png");
+    min-width: 800px;
+    position: relative;
 
-    // delete
-    width: 700px;
-    height: 600px;
- 
-    ul{
-      margin-left: 400px;
+    .circle-border {
+      width: 100%;
+      height: 100%;
+
+      &::before {
+        content: "";
+        width: 96%;
+        height: 110%;
+        border-right: 3px solid $golden;
+        border-radius: 50%;
+        display: block;
+        position: absolute;
+        left: -180px;
+        top: 31px;
+      }
     }
+
+
+    ol {
+      list-style-type: none;
+      margin-left: 400px;
+
+      li {
+        margin: 50px 0px;
+        position: relative;
+
+        &::before {
+          content: "";
+          display: block;
+          width: 42px;
+          height: 42px;
+          position: relative;
+          left: -70px;
+          top: 45px;
+          border: 10px solid white;
+          border-radius: 50%;
+          background: #E3B873;
+          color: white;
+          text-align: center;
+          line-height: 41px;
+          font-family: $ysv;
+          font-size: 18px;
+        }
+
+        &:nth-child(1)::before {
+          content: "1";
+        }
+
+        &:nth-child(2)::before {
+          content: "2";
+        }
+
+        &:nth-child(3)::before {
+          content: "3";
+        }
+
+        &:nth-child(4)::before {
+          content: "4";
+        }
+
+      }
+
+      li:nth-child(1) {
+        left: 63px;
+      }
+
+      li:nth-child(2) {
+        left: 170px;
+      }
+
+      li:nth-child(3) {
+        left: 180px
+      }
+
+      li:nth-child(4) {
+        left: 135px;
+      }
+
+    }
+
   }
 
   .mesuarement-form {
@@ -53,26 +129,12 @@
       color: white;
     }
 
-    ::-webkit-input-placeholder {
-      color: white;
-    }
-
-    ::-moz-placeholder {
-      color: white;
-    }
-
-    /* Firefox 19+ */
-    :-moz-placeholder {
-      color: white;
-    }
-
-    /* Firefox 18- */
+    ::-webkit-input-placeholder,
+    ::-moz-placeholder,
+    :-moz-placeholder,
     :-ms-input-placeholder {
       color: white;
     }
-
-
-
 
     label {
       color: rgba(255, 255, 255, 0.5);

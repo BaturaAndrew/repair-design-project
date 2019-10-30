@@ -1,12 +1,13 @@
 @import "base/typography";
 @import "base/conteiner-flex";
 
-@import "abstracts/variables";
 
+@import "abstracts/variables";
 
 
 @import "components/buttons";
 @import "components/form";
+
 
 @import "layout/header";
 @import "layout/turnkey-repair";
@@ -14,12 +15,18 @@
 @import "layout/online-control";
 @import "layout/types-repair.scss";
 @import "layout/mesuarement.scss";
-
+@import "layout/styles";
+@import "layout/design-projest";
+@import "layout/our-team";
+@import "layout/our-clients";
+@import "layout/questions";
+@import "layout/location";
 @import "layout/footer";
 
-*{
+* {
   margin: 0;
 }
+
 a {
   text-decoration: none;
 }
