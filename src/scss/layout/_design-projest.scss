@@ -1,0 +1,25 @@
+.design-project {
+  padding-top: 80px;
+
+  &__header {
+    margin: 0;
+    margin-bottom: 30px;
+    color: black;
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+
+  &__block {
+    padding-top: 80px;
+    justify-content: flex-start;
+  }
+
+  &__text {
+    margin-top: 25px;
+    font-family: $book;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center;
+    color: #363636;
+  }
+}

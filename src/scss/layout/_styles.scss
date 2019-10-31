@@ -1,9 +1,74 @@
 .styles {
   width: 100%;
-  border: 1px solid red;
-  //delete
   height: 865px;
   margin-bottom: 215px;
   background: linear-gradient(121.26deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.9) 100%),
     no-repeat url("../assets/images/image-5.1.png");
+
+
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  &-description {
+    min-width: 415px;
+    margin-left: 100px;
+    margin-top: 250px;
+
+    .styles__header {
+      margin-bottom: 50px;
+      font-family: $ysv;
+      font-size: 27px;
+      line-height: 37px;
+      text-transform: uppercase;
+      color: $golden;
+    }
+
+    .styles__list {
+      padding: 0;
+      list-style-type: none;
+
+      .list__element {
+        font-family: Proxima Nova;
+        font-size: 20px;
+        line-height: 34px;
+        color: #FFFFFF;
+      }
+    }
+  }
+
+  &-examples {
+    width: 100%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+    @media (max-width:1000px) {
+      display: none;
+    }
+
+    img {
+      margin-bottom: 50px;
+
+      @media (max-width:1300px) {
+        margin: 10px 10px !important;
+        width: 40%;
+      }
+    }
+
+    img:nth-child(1) {
+      margin-top: -50px;
+    }
+
+    img:nth-child(2) {
+      margin-top: -150px;
+      margin-left: 50px;
+    }
+
+    img:nth-child(4) {
+      margin-top: -380px;
+      margin-left: 50px;
+
+    }
+  }
+
 }

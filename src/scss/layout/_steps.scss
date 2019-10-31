@@ -1,0 +1,99 @@
+.steps {
+  width: 80%;
+  height: 690px;
+
+
+  border: 1px solid red;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  &__info {
+    align-items: flex-start;
+
+    .info__header1 {
+      font-family: $demi;
+      font-size: 15px;
+      line-height: 21px;
+      text-transform: uppercase;
+      color: #FFFFFF;
+    }
+
+    .info__header2 {
+      font-family: $ysv;
+      font-size: 27px;
+      line-height: 37px;
+      text-transform: uppercase;
+      color: $golden
+    }
+
+    .info__description {
+
+      .description__header {
+        font-family: $ysv;
+        font-size: 18px;
+        line-height: 25px;
+        text-transform: uppercase;
+        color: $golden
+      }
+
+      .description__text {
+        font-family: $book;
+        font-size: 15px;
+        line-height: 25px;
+        color: #FFFFFF;
+      }
+    }
+
+  }
+
+  &__right {
+    height: 100%;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+
+    .right__items {
+      width: 100%;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      position: relative;
+      color: white;
+
+      .step-item {
+        margin-right: 200px;
+        margin-top: 50px;
+
+        span {
+          font-family: $ysv;
+          font-size: 15px;
+          line-height: 21px;
+          text-transform: uppercase;
+          text-decoration: underline;
+          text-decoration-color: $golden;
+        }
+
+        p {
+          font-family: $book;
+          font-size: 15px;
+          line-height: 18px;
+          color: #FFFFFF;
+        }
+      }
+
+      .step-item:nth-child(3),
+      .step-item:nth-child(6) {
+        margin-right: 0;
+      }
+    }
+
+    img {
+      position: relative;
+      bottom: -40px;
+      height: auto;
+      width: 774px;
+
+    }
+  }
+
+
+}
