@@ -1,0 +1,43 @@
+.team {
+  padding-top: 80px;
+
+  &__header {
+    color: white;
+    margin: 0;
+    margin-bottom: 30px;
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    color: white;
+    margin-top: 25px;
+    font-family: $book;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center;
+  }
+
+  &__text2 {
+    font-family: $book;
+    font-size: 20px;
+    line-height: 34px;
+    text-align: center;
+    color: #363636;
+    position: relative;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 70px;
+      height: 2px;
+      background: #E3B873;
+      margin: 30px auto;
+    }
+  }
+
+  &__block {
+    padding-top: 80px;
+    justify-content: flex-start;
+  }
+}

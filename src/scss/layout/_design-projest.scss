@@ -9,11 +9,6 @@
     text-transform: uppercase;
   }
 
-  &__block {
-    padding-top: 80px;
-    justify-content: flex-start;
-  }
-
   &__text {
     margin-top: 25px;
     font-family: $book;
@@ -21,5 +16,10 @@
     line-height: 27px;
     text-align: center;
     color: #363636;
+  }
+
+  &__block {
+    padding-top: 80px;
+    justify-content: flex-start;
   }
 }
