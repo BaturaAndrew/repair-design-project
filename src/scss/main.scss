@@ -9,6 +9,7 @@
 @import "components/form";
 @import "components/card";
 @import "components/card-employee";
+@import "components/card-client";
 @import "components/info-controls";
 
 @import "layout/header";
@@ -52,7 +53,7 @@ input {
 
 .wrap-body-bg {
   width: 100%;
-  height: 1615px;
+  height: 1150px;
   background: $body-bg-color;
   padding-top: 250px;
   justify-content: flex-start;

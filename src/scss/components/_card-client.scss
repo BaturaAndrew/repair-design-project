@@ -1,18 +1,19 @@
-.card-person {
-  width: 276px;
+.card-client {
+  width: 327px;
   height: 405px;
   margin-right: 110px;
+  margin-top: -70px;
   justify-content: flex-start;
+  align-items: flex-start;
+  background-color: white;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
 
-  img {
-    width: 100%;
-  }
+  .client-header-block {
+    margin-bottom: 20px;
 
-  &__description {
-    margin-top: -70px;
-    width: 80%;
-    background-color: white;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+    img {
+      margin-right: 20px;
+    }
 
     .description__header {
       font-family: $ysv;
@@ -21,27 +22,42 @@
       color: #363636;
       padding-top: 20px;
     }
-
-    .description__text {
-      font-family: $book;
-      font-size: 18px;
-      line-height: 26px;
-      text-align: center;
-      color: #959595;
-      margin: 0;
-    }
-
-    .button-type1 {
-      margin-top: 10px;
-      display: block;
-      width: 236px;
-      height: 44px;
-      font-size: 13px;
-      line-height: 44px;
-    }
   }
+
+
+  .description__text {
+    font-family: $book;
+    font-size: 15px;
+    line-height: 180%;
+    text-transform: lowercase;
+    text-align: left;
+    color: #959595;
+    margin: 0;
+  }
+
+  .done {
+    margin-top: 10px;
+    width: 236px;
+    height: 44px;
+    justify-content: space-around;
+    line-height: 44px;
+    font-family: $demi;
+    font-size: 17px;
+    border-radius: 2px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: #E3B873;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+  }
+
+  .done p:nth-of-type(1) {
+    padding-right: 10px;
+    border-right: 2px solid white;
+  }
+
 }
 
-.card-person:last-child {
+.card-client:last-child {
   margin-right: 0;
 }

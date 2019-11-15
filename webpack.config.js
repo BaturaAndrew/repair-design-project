@@ -1,7 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 
 const PATHS = {
@@ -20,6 +19,7 @@ module.exports = {
     // publicPath: '/'
   },
 
+  devtool: 'source-map',
 
   module: {
     rules: [{
@@ -39,16 +39,14 @@ module.exports = {
 
       {
         test: /\.(gif|png|jpe?g|svg)$/i,
-        use: [
-          'file-loader',
-          {
-            loader: 'image-webpack-loader',
-            options: {
-              bypassOnDebug: true, // webpack@1.x
-              disable: true, // webpack@2.x and newer
-            },
+        use: [{
+          loader: 'file-loader',
+          options: {
+            bypassOnDebug: true,
+            disable: true,
+            name: './images/[name].[ext]',
           },
-        ],
+        }, ],
       },
 
       {
@@ -56,6 +54,8 @@ module.exports = {
         use: [{
           loader: 'file-loader',
           options: {
+            bypassOnDebug: true,
+            disable: true,
             name: './fonts/[name].[ext]',
           },
         }, ],
@@ -77,7 +77,7 @@ module.exports = {
   ],
   mode: 'development',
   devServer: {
-    contentBase: path.join(__dirname, 'dist'),
+    // contentBase: path.join(__dirname, 'dist'),
     compress: true,
     port: 3000
   }
