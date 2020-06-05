@@ -6,7 +6,12 @@
   display: flex;
   align-items: center;
 
+
   &-container {
+    @media screen and (max-width: 720px) {
+      display: none;
+    }
+
     width: 87%;
     height: 37px;
     margin: 0 auto;

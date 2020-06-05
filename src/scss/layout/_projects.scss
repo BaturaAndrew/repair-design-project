@@ -1,11 +1,15 @@
 .projects {
   padding-top: 70px;
   width: 100%;
-  height: 600px;
   display: grid;
   grid-template: 24fr 46fr 482px/60fr 80fr;
   background: $body-bg-color;
 
+  @media screen and (max-width: 900px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
   .projects-completed {
     width: 442px;
@@ -15,10 +19,24 @@
     display: grid;
     grid-template: 8fr 10fr 10fr 10fr 20fr 20fr/auto;
 
+    @media screen and (max-width: 900px) {
+      width: auto;
+      display: flex;
+      flex-direction: column;
+      margin-left: 0;
+      padding: 0 10px;
+    }
+
     &__header {
-      margin: 0;
+      margin: 0 auto;
+      margin-bottom: 22px;
       font-family: $ysv;
       font-size: 27px;
+
+      @media screen and (max-width: 720px) {
+        font-size: 22px;
+      }
+
       font-weight: 500;
       letter-spacing: -0.07em;
       text-transform: uppercase;
@@ -26,12 +44,20 @@
     }
 
     &__text {
-      margin: 0;
+      margin: 0 auto;
+      margin-bottom: 36px;
       grid-row: 3;
       font-family: $book;
       line-height: 29px;
       font-size: 18px;
+
+      @media screen and (max-width: 720px) {
+        font-size: 14px;
+        line-height: 158.48%;
+      }
+
       color: #FFFFFF;
+      text-align: center;
     }
 
     .projects-completed__info {
@@ -40,6 +66,11 @@
       flex-direction: row;
       justify-content: flex-start;
 
+      @media screen and (max-width: 720px) {
+        justify-content: center;
+        margin-bottom: 20px;
+      }
+
       .info-section {
         width: 160px;
 
@@ -47,6 +78,11 @@
           font-family: $ysv;
           color: $golden;
           font-size: 18px;
+
+          @media screen and (max-width: 720px) {
+            font-size: 14px;
+          }
+
           font-weight: 500;
           text-transform: uppercase;
           margin: 0;
@@ -60,6 +96,12 @@
       }
 
     }
+
+    .info-controls {
+      @media screen and (max-width: 900px) {
+        display: none;
+      }
+    }
   }
 
   .projects-navigation {
@@ -67,6 +109,10 @@
     display: flex;
     height: 100%;
     align-items: center;
+
+    @media screen and (max-width: 900px) {
+      display: none;
+    }
 
     &__link {
       margin-right: 50px;
@@ -90,6 +136,11 @@
 
   .projects-conteiner-slaider {
     height: 100%;
+
+    @media screen and (max-width: 900px) {
+      width: 80%;
+    }
+
     grid-column: 2;
     grid-row: 3;
     flex-direction: row;
