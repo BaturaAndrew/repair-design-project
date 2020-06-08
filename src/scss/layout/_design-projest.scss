@@ -1,6 +1,7 @@
 .design-project {
   padding-top: 80px;
 
+
   &__header {
     margin: 0;
     margin-bottom: 30px;
@@ -21,5 +22,11 @@
   &__block {
     padding-top: 80px;
     justify-content: flex-start;
+
+    @media screen and(max-width:720px) {
+      justify-content: center;
+    }
+
+    flex-wrap: wrap;
   }
 }

@@ -1,6 +1,11 @@
 .mesuarement {
   justify-content: space-between;
   padding-bottom: 150px;
+  flex-wrap: wrap;
+
+  @media screen and(max-width:1300px) {
+    display: none;
+  }
 
   .mesuarement-services {
     background: no-repeat -250px url("../assets/images/steps-building.png");
@@ -27,11 +32,13 @@
 
     ol {
       list-style-type: none;
-      margin-left: 400px;
+      margin-left: 720px;
 
       li {
         margin: 50px 0px;
         position: relative;
+        display: block;
+
 
         &::before {
           content: "";
@@ -90,7 +97,7 @@
   }
 
   .mesuarement-form {
-
+    margin-top: 100px;
     width: 506px;
     height: 509px;
     background: $body-bg-color;
@@ -117,11 +124,15 @@
     .form__phone-input,
     .form__email-input {
       width: 413px;
+
+      @media screen and(max-width:720px) {
+        width: 200px;
+      }
     }
 
     .btn-margin {
-      margin-right: -200px;
       margin-bottom: 30px;
+      width: 90%;
     }
 
     input:not(:last-child) {

@@ -1,5 +1,6 @@
 .team {
   padding-top: 80px;
+  padding-bottom: 50px;
 
   &__header {
     color: white;
@@ -19,6 +20,10 @@
   }
 
   &__text2 {
+    @media screen and(max-width:720px) {
+      display: none;
+    }
+
     font-family: $book;
     font-size: 20px;
     line-height: 34px;
@@ -39,5 +44,10 @@
   &__block {
     padding-top: 80px;
     justify-content: flex-start;
+    flex-wrap: wrap;
+
+    @media screen and(max-width:720px) {
+      justify-content: center;
+    }
   }
 }

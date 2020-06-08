@@ -3,6 +3,10 @@
   justify-content: flex-start;
   align-items: flex-start;
 
+  @media screen and(max-width:720px) {
+    display: none;
+  }
+
   &__info {
     align-items: flex-start;
 
@@ -24,6 +28,7 @@
     }
 
     .info__description {
+      margin-top: 200px;
 
       .description__header {
         font-family: $ysv;
@@ -58,8 +63,8 @@
       color: white;
 
       .step-item {
-        margin-right: 200px;
-        margin-top: 50px;
+        margin-right: 20%;
+        margin-top: 5%;
 
         span {
           font-family: $ysv;
@@ -78,10 +83,6 @@
         }
       }
 
-      .step-item:nth-child(3),
-      .step-item:nth-child(6) {
-        margin-right: 0;
-      }
     }
 
     img {

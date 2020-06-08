@@ -1,14 +1,27 @@
-.card-person {
-  width: 276px;
+.card-employee {
   height: 405px;
   margin-right: 110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   justify-content: flex-start;
+
+  @media screen and(max-width:720px) {
+    margin-bottom: 30px;
+    margin-right: 0;
+  }
+
 
   img {
     width: 100%;
   }
 
   &__description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     margin-top: -70px;
     width: 80%;
     background-color: white;

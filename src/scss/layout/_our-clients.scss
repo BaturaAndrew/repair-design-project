@@ -1,6 +1,10 @@
 .clients {
   padding-top: 80px;
 
+  @media screen and(max-width:720px) {
+  display: none;
+  }
+
   &__header {
     color: #181818;
     margin: 0;
@@ -20,6 +24,6 @@
 
   &__block {
     padding-top: 100px;
-    justify-content: flex-start;
+    flex-wrap: wrap;
   }
 }
